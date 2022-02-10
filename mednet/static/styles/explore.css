@@ -1,0 +1,264 @@
+html {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+.topbar {
+    background-color: white;
+    height: 70;
+    width: 100%;
+}
+
+.small-font {
+    font-size: 8px;
+    text-align: center;
+}
+
+.search-bar {
+    width: 330px;
+    color: black;
+}
+
+.topbar-right {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.vertical-center {
+    top: 50%;
+    -webkit-transform:translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.content {
+    background-color: #E2EDF3;
+    height: max-content;
+    width: 100%;
+}
+
+.inner-content {
+    padding-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    height: max-content;
+    background-color: #E2EDF3;
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #7D7D7D;
+    border-radius: 15px;
+    border-collapse: separate; 
+}
+
+.feed {
+    width: 556px;
+    height: max-content;
+    border-width: 1px;
+    border-color: 7D7D7D;
+    border-radius: 5;
+}
+
+.schedule {
+    width: 307px;
+    height: 237px;
+    background-color: white;
+}
+
+.group {
+    font-size: 18px;
+    color: #7D7D7D;
+}
+
+.connection {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.title-font {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.write-post {
+    height: 90px;
+    width: 100%;
+}
+
+.grey-box {
+    height: 46px;
+    background-color: #E5E5E5;
+    border-radius: 40px;
+    border-width: 0px;
+    color: black;
+}
+
+.write-post-box {
+    width: 450px;
+}
+
+.inner-post {
+    margin: 24px 24px 24px 24px;
+}
+
+.author {
+    display: flex;
+    font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.post-attributes {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4BB4EF;
+}
+
+.post-connection {
+    font-size: 15px;
+    color: #7D7D7D;
+}
+
+
+.post-bottom {
+    display: flex;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.link {
+    align-items: center;
+    width: 459;
+    height: 104;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.link-left {
+    width: 278;
+    height: 104;
+    padding: 15px 30px 15px 30px;
+}
+
+.link-right {
+    width: 181;
+    height: 104;
+    background-color: #AADCF7;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+}
+
+.link-info {
+    display: flex;
+    font-size: 15px;
+    color: #7D7D7D;
+    margin-left: 10px;
+    margin-top: 5;
+}
+
+.link-attribute {
+    font-size: 16px;
+    display: flex;
+    margin-left: 15px;
+    line-height: 25px;
+}
+
+.link-doctor {
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.vertical-center-new {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.inner-post-content {
+    margin: 15px 15px 15px 15px;
+}
+
+.shift-down {
+    margin-top: 15px;
+}
+
+.doctor_matches {
+    width: 618px;
+    height: 74px;
+    background-color: #AADCF7;
+    font-size: 30px;
+    text-align: center;
+    margin: auto auto;
+    border-radius: 10px;
+    line-height: 74px;
+    margin-bottom: 25px;
+}
+
+.top-doctors {
+    width: 556px;
+    height: 533px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.top-title {
+    font-size: 24px;
+    margin: 15px 15px 15px 20px;
+    font-weight: bold;
+}
+
+.see-all {
+    font-size: 20px;
+    color: #7D7D7D;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.doctor-row {
+    display: flex;
+}
+
+.doctor-rank {
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.contributor {
+    width: 462px;
+    height: 45px;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.cont-row {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+}
+
+.bottom-padding {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.vote-center {
+    margin-top: auto;
+    margin-bottom: 10;
+}

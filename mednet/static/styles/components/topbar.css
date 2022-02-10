@@ -1,0 +1,54 @@
+.topbar {
+  background-color: white;
+  height: 70;
+  width: 100%;
+}
+
+.topbar-right {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.search-bar {
+  width: 330px;
+  color: black;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 300px;
+  height: 456;
+}
+
+.inner-profile {
+  margin-top: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.topbar-right {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-between;
+}
+.grey-box {
+  height: 46px;
+  background-color: #e5e5e5;
+  border-radius: 40px;
+  border-width: 0px;
+  color: black;
+}
+
+.topbar-right * {
+  text-align: center;
+}

@@ -1,0 +1,170 @@
+.profile-section {
+  padding-bottom: 20px;
+  min-width: 1200px;
+  /* background-color: green; */
+}
+.profile-section .profile-bg {
+  height: 150px;
+}
+.profile-section .profile-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-section .profile-details {
+  padding: 0 50px;
+  display: flex;
+}
+.profile-section .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #a4c9a8;
+}
+.profile-section .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-section .profile-info {
+  text-align: center;
+  margin-top: -60px;
+}
+.profile-section .profile-info h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  margin: 20px 0 0;
+}
+.profile-section .profile-info span {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: #868686;
+}
+.profile-section ul {
+  padding: 0 80px;
+  margin: 0;
+}
+.profile-section ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-section .connections {
+  /* max-width: 500px; */
+  /* width: 100%; */
+  padding: 30px 50px 0;
+}
+.profile-section .connections a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.profile-section .connections img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  vertical-align: top;
+}
+.profile-section .connections a span {
+  color: #8b8b8b;
+  padding-left: 10px;
+  font-weight: 500;
+}
+.profile-section .connections li {
+  padding-bottom: 15px;
+}
+.profile-section .mutual-connections {
+  padding-left: 30px;
+  /* width: 50%; */
+}
+.profile-section .connections p {
+  /* padding-left: 80px; */
+  font-size: 20px;
+  color: #919191;
+}
+.profile-section .profile-connect {
+  margin: auto 0 0 auto;
+}
+.profile-section .profile-connect a {
+  font-size: 20px;
+  color: #000;
+  background-color: #4cb4ef;
+  text-decoration: none;
+  padding: 5px 35px;
+  border-radius: 10px;
+  display: block;
+  margin-top: auto;
+  border: 1px solid #b9c0c4;
+}
+
+.direct-connections > a > :nth-child(2),
+.mutual-connections > a > :nth-child(2) {
+  margin-left: 15px;
+}
+.direct-connections > a > :first-child,
+.mutual-connections > a > :first-child {
+  height: 30px;
+  width: 30px;
+}
+.direct-connections a,
+.mutual-connections a {
+  align-items: center;
+  margin-top: 10px;
+}
+
+.direct-connections *,
+.mutual-connections * {
+  font-size: 1.5rem;
+}
+
+.mutual-connections div {
+  color: grey !important;
+  font-weight: normal;
+}
+
+.groups {
+  display: flex;
+  max-width: min(33%, 329.048px);
+  font-size: 1.2rem;
+}
+.groups .groups-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.groups .grey-dot {
+  width: 5px !important;
+  height: 5px !important;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.group-list {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1;
+}
+.group-list > div {
+  margin-right: 7px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.group-list > div > * {
+  margin-right: 5px;
+}
+/* .groups {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  color: rgb(173, 173, 173);
+  flex-grow: 1;
+  margin-left: auto;
+}
+.groups > * {
+  width: 250px;
+  margin-left: auto;
+} */

@@ -1,0 +1,74 @@
+.profile-image {
+  background-image: url("/static/images/grey_user_icon.png");
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.upvote-icon {
+  background-image: url("/static/images/NicePng_white-up-arrow-png_4324915.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: start center;
+  background-size: contain;
+}
+.downvote-icon {
+  background-image: url("/static/images/PngItem_741119.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transform: scaleY(-1);
+}
+
+.stethoscope-icon {
+  background-image: url("/static/images/Dermatology.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.heart-icon {
+  background-image: url("/static/images/heart.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.plus-icon {
+  background-image: url("/static/images/plus.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.holistic-icon {
+  background-image: url("/static/images/holistic.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.female-gender-icon {
+  background-image: url("/static/images/female-gender.JPG");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+.straight-forward-icon {
+  background-image: url("/static/images/Straight-Forward.png");
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}

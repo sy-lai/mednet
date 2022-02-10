@@ -1,0 +1,303 @@
+@import "common/index.css";
+html {
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul,
+li {
+  list-style-type: none;
+}
+.topbar {
+  background-color: white;
+  height: 70;
+  margin: 8px 8px 0px;
+}
+
+.small-font {
+  font-size: 8px;
+  text-align: center;
+}
+
+.search-bar {
+  width: 330px;
+  color: black;
+}
+
+.topbar-right {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.vertical-center {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-between;
+}
+.grey-box {
+  height: 46px;
+  background-color: #e5e5e5;
+  border-radius: 40px;
+  border-width: 0px;
+  color: black;
+}
+
+/* visitors profile ****************************************************************************************/
+.visitor-profile-section {
+  display: flex;
+  border-top: 1px solid #b9c0c4;
+  border-bottom: 1px solid #b9c0c4;
+  padding: 0 0 0 50px;
+  justify-content: space-between;
+}
+.visitor-profile-section .profile-info {
+  padding-top: 10px;
+  text-align: center;
+  max-width: 220px;
+  width: 100%;
+}
+.profile-info .profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #a4c9a8;
+}
+.profile-info .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-info h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  margin: 20px 0 0;
+}
+.profile-info span {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: #868686;
+}
+.visitor-profile-section .connections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  width: 100%;
+}
+.connections .mutual {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b9c0c4;
+  width: 85%;
+  text-align: center;
+}
+.connections a {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+.connections a span {
+  color: #8b8b8b;
+  padding-left: 10px;
+  font-weight: 500;
+}
+.connections a img {
+  height: 20px;
+  width: 20px;
+  object-fit: cover;
+  vertical-align: top;
+  padding-right: 10px;
+}
+.visitor-profile-section .endorsements {
+  padding-top: 10px;
+}
+.endorsements span {
+  padding-left: 0 !important;
+  font-size: 18px;
+}
+
+.visitor-profile-section .schedule {
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+}
+.schedule ul {
+  padding-left: 0;
+}
+.schedule ul li {
+  font-size: 24px;
+  line-height: 30px;
+}
+.schedule ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 30px;
+  background-color: transparent;
+  padding: 0;
+}
+.schedule button {
+  display: block;
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+  width: 65%;
+  padding: 5px 0;
+  margin: 0 auto 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #a4c9a8;
+  border: none;
+  cursor: pointer;
+}
+.schedule button.btn-bg {
+  background-color: #4cb4ef;
+}
+.visitor-profile-section .sponsors {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  background-color: #a4c9a8;
+}
+.sponsors ul li {
+  display: flex;
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 30px;
+  justify-content: center;
+  padding-left: 0;
+}
+.sponsors ul {
+  padding-left: 0;
+  margin: 0 0 25px;
+}
+.sponsors ul li img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  padding-right: 40px;
+  vertical-align: bottom;
+}
+.sponsors ul li h6 {
+  margin: 0;
+  width: 150px;
+}
+
+/* visitor profile ends ************************************************************************************/
+
+/*review *************************************************************************************************/
+.review-section {
+  padding: 10px 50px 10px;
+  background-color: #ecf3f7;
+  position: relative;
+  height: 100%;
+}
+.review-section form {
+  max-width: 270px;
+  position: absolute;
+  top: 14px;
+  right: 18%;
+}
+.review-section select {
+  background-color: transparent;
+  border: none;
+  color: #8b8b8b;
+  margin-bottom: 5px;
+}
+.review-section .calendar {
+  position: absolute;
+  top: -5%;
+  right: 27%;
+  z-index: 2;
+  width: 500px;
+  height: 350px;
+  /* background-color: #4cb4ef; */
+}
+.review-section .calendar img {
+  width: 100%;
+  height: 100%;
+}
+.review-section select:focus {
+  outline: none;
+}
+.review-section .menu {
+  padding-left: 100px;
+}
+.review-section .menu img {
+  vertical-align: middle;
+}
+.review-section h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.review-section .review-box {
+  padding: 40px 15px;
+  display: flex;
+  border: 1px solid #b9c0c4;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.review-section .reviewer-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  flex: 0 0 30%;
+}
+.reviewer-info .review-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.review-section h3 {
+  margin: 0 0 5px 0;
+  font-size: 30px;
+}
+.review-section span {
+  margin: 0;
+  color: #8b8b8b;
+  font-weight: 600;
+}
+.review-section .review-box ul {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+  margin: 0;
+}
+.review-section .review-details {
+  padding-left: 30px;
+}
+.review-section .reviewer-text {
+  width: 70%;
+  flex: 0 0 65%;
+  font-size: 16px;
+  line-height: 21px;
+  color: #3a3a3a;
+}
+.review-section .reviewer-text p {
+  min-height: 105px;
+}
+/*review ends  *****************************************************************************************/

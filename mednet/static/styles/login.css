@@ -1,0 +1,137 @@
+html {
+    font-size: 15pt;
+    font-family: Roboto, sans-serif;
+    background-color: #E2EDF3;
+}
+
+.background { 
+    width: 450px;
+    height: 480px;
+    margin: auto auto;
+    margin-top: 100px;
+    align-items: center;
+    padding: 12px 20px 30px 25px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.backgroundca { 
+    width: 450px;
+    height: 505px;
+    margin: auto auto;
+    margin-top: 100px;
+    align-items: center;
+    padding: 12px 20px 30px 25px;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.login-title {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.header {
+    margin-top: 100px;
+    width: 210;
+    margin: auto auto;
+    align-items: center;
+}
+  
+.login-form {
+    text-align: center;
+}
+
+.vertical-center-new {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  
+.login-button {
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 268px;
+    height: 32px;
+    background-color: #4BB4EF;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-width: 0px;
+}
+
+.signup-button{
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    width: 268px;
+    height: 32px;
+    background-color: #1F5C7E;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.input-box {
+    color: black;
+    border-radius: 5px;
+    width: 268px;
+    height: 46px;
+    background-color: #F3F3F3;
+    border-width: 0px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hline {
+    width: 363.51;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.hline2 {
+    width: 363.51;
+    margin-top: 50px;
+    margin-bottom: 10px;
+} 
+
+.link {
+    color: white;
+    font-size: 18px;
+    margin: auto auto;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.no-account {
+    margin: auto auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.donthaveaccount {
+    margin: auto auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

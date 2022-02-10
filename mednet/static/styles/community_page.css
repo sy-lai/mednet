@@ -1,0 +1,417 @@
+html {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+.topbar {
+    background-color: white;
+    height: 60;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+#topbar-right {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 60;
+    height: 60;
+    object-fit: contain;
+}
+
+
+.space-evenly {
+    display: flex;
+    justify-content: space-between
+}
+.small-font {
+    font-size: 8px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.search-bar {
+    width: 330px;
+    color: black;
+}
+
+.grey-box {
+    height: 46px;
+    background-color: #E5E5E5;
+    border-radius: 40px;
+    border-width: 0px;
+    color: black;
+}
+
+.vertical-center {
+    -webkit-transform:translateY(-50%);
+}
+
+.top-bar-user-icon {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    margin-left: 5px;
+}
+
+
+.line {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #C7C7C7;
+  }
+
+.content {
+    background-color: #E2EDF3;
+    height: 160%;
+    width: 100%;
+}
+
+.banner {
+    height: 300px;
+    font-size: 30px;
+    background-color:white;
+    overflow: hidden;
+}
+
+.banner-top {
+    display: flex;
+    width: 100%;
+}
+
+.banner-info {
+  width: 55%;
+  height: 100%; 
+  float: left;
+}
+
+
+.WOC-img {
+    height: 410px;
+    object-fit:cover;
+    float: right;
+}
+
+.group-text {
+    width: 50%;
+    height: 100%;
+}
+
+.group-title {
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin: 40 0 0 50;
+}
+
+.members-info {
+    height: 70px;
+    margin: 5 0 0 50;
+}
+
+.group-icons {
+    height: 200px;
+    width: 100%;
+}
+
+.group-icon {
+    height: 75px;
+    float: right;
+    margin: 20 10 0 10;
+}
+
+.banner-line {
+    display: inline-block;
+    width: 105%;
+    border-top: 1px solid #C7C7C7;
+    margin: 10 0 10 0;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.endorsed-docs {
+    height: 275;
+    float: left;
+}
+
+.box {
+    background-color: white;
+    border-style: solid;
+    border-width: 1;
+    border-color: #7D7D7D;
+    border-radius: 10px;
+    border-collapse: separate;
+    margin: 50 auto auto 100;
+    width: 45%;
+}
+
+.box-title {
+    text-align: center;
+    margin: 25 auto 10 auto;
+    font-size: 20;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.link {
+    align-items: center;
+    width: 500;
+    height: 80;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.link-left {
+    width: 300;
+    height: 80;
+    padding: 15px 30px 15px px;
+    display: flex;
+}
+
+.link-right {
+    width: 175;
+    height: 80;
+    display: flex;
+    background-color: #AADCF7;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+}
+
+.vertical-center-new {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.link-doctor {
+    font-size: 20;
+    margin: 4 0 5 30;
+}
+
+.link-info {
+    font-size: 20px;
+    color: #7D7D7D;
+    margin: 0 0 20 20;
+}
+
+.doc-info {
+    margin: 10 auto auto 20;
+    height: 23px;
+    display: flex;
+}
+
+.small-heart {
+    height: 18px;
+    width: 18px;
+    float: left;
+}
+
+.small-plus {
+    height: 15px;
+    width: 15px;
+    float: left;
+    margin: 3 0 0 2;
+}
+
+.doc-mutual-friends-text {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 2 0 0 15;
+}
+
+.link-attribute {
+    font-size: 25px;
+    display: flex;
+    margin: auto 0 auto 5;
+    line-height: 45px;
+}
+
+.yang-attributes {
+    height: 75;
+    margin-left: 20;
+}
+
+.dorian-attributes {
+    height: 50;
+    margin: 0 0 25 15;
+}
+
+.vertical-center-new {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.doc-icon {
+    margin-left: 20;
+}
+
+.recent-posts {
+    height: 700;
+    width: 500;
+    margin-right: 65;
+    float: right;
+    display: inline-block;
+    align-content: center;
+}
+
+.post-search {
+    width: 50%;
+    height: 40;
+    text-align: center;
+    margin: 20 0 0 115;
+}
+
+.rec-post1 {
+    width: 90%;
+    height: 300;
+    margin: 20 auto 0 auto;
+}
+
+.post-header {
+    display: flex;
+    height: 70;
+}
+
+.post-content {
+    height: 70%;
+    width: 90%;
+    margin: 20 auto;
+}
+
+.post-user-icon {
+    margin: 10 0 20 20;
+    height: 50;
+    width: 50;
+}
+
+.post-text {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.post-title {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 25 0 0 20;
+}
+
+.grey_dot {
+    height: 7;
+    width: 7;
+    margin: 34 0 0 20;
+}
+
+.pt-group {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4BB4EF;
+    margin: 27 0 0 18;
+    text-align: center;
+}
+
+.connection {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #7D7D7D;
+    margin: 30 0 0 18;
+}
+
+.rec-link {
+    align-items: center;
+    width: 400;
+    height: 80;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sm-link-doctor {
+    font-size: 20;
+    margin: 15 0 0 15;
+}
+
+.smaller-heart {
+    height: 16px;
+    width: 16px;
+    float: left;
+}
+
+.smaller-plus {
+    height: 13px;
+    width: 13px;
+    float: left;
+    margin: 0 0 0 2;
+}
+
+.sm-mutual-text {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 10;
+}
+
+
+.sm-doc-info {
+    height: 18px;
+    display: flex;
+    margin-top:10;
+}
+
+.kim-attributes {
+    height: 75;
+}
+
+.shah-box {
+    height: 800;
+    width: 500;
+    margin-right: 65;
+    float: right;
+    display: inline-block;
+    align-content: center;
+}
+
+.stacked-pt-group {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4BB4EF;
+    margin: 6 0 0 18;
+    text-align: center;
+}
+
+.rec-post2 {
+    width: 90%;
+    height: 200;
+    margin: 20 auto 0 auto;
+}
+
+.upcoming-events {
+    height: 373;
+    float: left;
+}
+
+.schedule {
+    height: 300;
+    display: block;
+    margin: auto;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+  }
