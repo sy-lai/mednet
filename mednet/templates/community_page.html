@@ -1,0 +1,161 @@
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/community_page.css') }}">
+
+<body>
+    <div class="topbar space-evenly">
+        <div id="topbar-left">
+            <a href="/dashboard"><img class="logo" src="/static/images/logo.png" height="60"></a>
+            <input type="text" placeholder="Search.." class="search-bar grey-box vertical-center">
+        </div>
+        <div id="topbar-right" class="space-evenly topbar-right">
+            <div class="network">
+                <a href="/explore"><img src="/static/images/network.png" height="35"></a>
+                <div class="small-font">Network</div>
+            </div>
+            <div class="profile-top-bar">
+                <div><img class="top-bar-user-icon" src="/static/images/user_icon.png"></div>
+                <div class="small-font">Profile</div>
+            </div>
+        </div>
+    </div> 
+    <div class="line"></div>
+    <div class="content">
+        <div class="banner">
+            <div class="banner-info">
+                <div class="banner-top">
+                    <div class="group-text">
+                        <div class="group-title">WOC</div>
+                        <div class="group-members">
+                            <div><img class="members-info" src="/static/images/group_members.png"></div>
+                        </div>
+                    </div>
+                    <div class="group-icons">
+                        <div><img class="group-icon" src="/static/images/invite.png"></div>
+                        <div><img class="group-icon" src="/static/images/leave_group.png"></div>
+                    </div>
+                </div>
+                <div class="banner-line"></div>
+                <div class="slogan">A safe place for Women of Color<br>to connect and support each other<br> in their medical needs</div>
+            </div>
+            <div><img class="WOC-img" src="/static/images/WOC.jpg"></div>
+        </div>
+        <div class="line"></div>
+        <div class="box endorsed-docs">
+            <div class="box-title">Doctors Endorsed by this Group</div>
+            <div id="link" class="box link space-evenly">
+                <div class="link-left">
+                    <div class="vertical-center-new">
+                        <img class="doc-icon" src="/static/images/doctor_icon.png" height="40">
+                    </div>
+                    <div class="vertical-center-new">
+                        <div class="link-doctor">Christina Yang, M.D.</div>
+                        <div class="link-info">
+                            <div class="doc-info">
+                                <div><img class="small-heart" src="/static/images/heart.png"></div>
+                                <div class="doc-mutual-friends-text">35 mutual friends</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link-right">
+                    <div class="link-attribute">
+                        <div><img class="yang-attributes" src="/static/images/yang_attributes.png"></div>
+                        <div class="vertical-center-new"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="link" class="box link space-evenly">
+                <div class="link-left">
+                    <div class="vertical-center-new">
+                        <img class="doc-icon" src="/static/images/doctor_icon.png" height="40">
+                    </div>
+                    <div class="vertical-center-new">
+                        <div class="link-doctor">John Dorian, M.D.</div>
+                        <div class="link-info">
+                            <div class="doc-info">
+                                <div><img class="small-heart" src="/static/images/heart.png"></div>
+                                <div class="doc-mutual-friends-text">23 mutual friends</div>
+                            </div>
+                        </div>
+                        <div class="link-info">
+                        </div>
+                    </div>
+                </div>
+                <div class="link-right">
+                    <div class="link-attribute">
+                        <div><img class="dorian-attributes" src="/static/images/dorian_attributes.png"></div>
+                        <div class="vertical-center-new"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box recent-posts space-evenly">
+            <div class="box-title">Recent Posts</div>
+            <input type="text" placeholder="Search posts" class="search-bar grey-box post-search">
+            <div class="box rec-post1">
+                <div class="post-header">
+                    <div><img class="post-user-icon" src="/static/images/grey_user_icon.png"></div>
+                    <a href="/profiles/influenza-smith">
+                    <div class="post-title">Influenza Smith</div>
+                    </a>
+                    <div><img class="grey_dot" src="/static/images/grey_dot.png"></div>
+                    <div class="pt-group">WOC</div>
+                    <div><img class="grey_dot" src="/static/images/grey_dot.png"></div>
+                    <div class="connection">2nd</div>
+                </div>
+                <div class="line"></div>
+                <div class="post-content">
+                    <div class="post-text">I had a really great experience with Dr. Kim, who is a woman of color like myself. She took really great care of my skin and adressed problems specific to my skin type. On top of that, she knows and understands problems that people of my ethnic background face. I definitely feel comfortable entrusting her with my health!</div>
+                    <a class="a:link" href=/visitors_profile>
+                        <div id="link" class="box rec-link space-evenly">
+                            <div class="link-left">
+                                <div class="vertical-center-new">
+                                    <img class="doc-icon" src="/static/images/doctor_icon.png" height="40">
+                                </div>
+                                <div class="vertical-center-new">
+                                    <div class="sm-link-doctor">Martha Kim, M.D.</div>
+                                    <div class="link-info">
+                                        <div class="sm-doc-info">
+                                            <div><img class="smaller-heart" src="/static/images/heart.png"></div>
+                                            <div class="sm-mutual-text">17 mutual friends</div>
+                                        </div>
+                                    </div>
+                                    <div class="link-info">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-right">
+                                <div class="link-attribute">
+                                    <div><img class="kim-attributes" src="/static/images/kim_attributes.png"></div>
+                                    <div class="vertical-center-new"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="box rec-post2">
+                <a href="/profiles/varicella-shah">
+                    <div class="post-header">
+                        <div><img class="post-user-icon" src="/static/images/grey_user_icon.png"></div>
+                        <div class="post-title">Varicella Shah</div>
+                        <div><img class="grey_dot" src="/static/images/grey_dot.png"></div>
+                        <div class="stacked-pt-group">South Asian<br>WOC</div>
+                        <div><img class="grey_dot" src="/static/images/grey_dot.png"></div>
+                        <div class="connection">1st</div>
+                    </div>
+                </a>
+                <div class="line"></div>
+                <div class="post-content">
+                    <div class="post-text">I want to spread the word about BetterHelp. I have been struggling with my anxiety as of late, and I wanted to find a therapist that is  South Asian, like myself. I had such great luck with this platform in finding someone who understands my cultural context. High recommend to anyone seeking out affordable counseling!</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="box upcoming-events">
+            <div class="box-title">Upcoming Events</div>
+            <div><img class="schedule" src="/static/images/schedule.png"></div>
+        </div>
+    </div>
+</body>
+</html>

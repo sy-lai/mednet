@@ -1,0 +1,160 @@
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/explore.css') }}">
+
+<body>
+    <div class="topbar space-evenly">
+        <div id="topbar-left">
+            <a href="/dashboard"><img src="/static/images/logo.png" height="60" class="vertical-center-new"></a>
+            <input type="text" placeholder="    Search.." class="search-bar grey-box vertical-center">
+        </div>
+        <div id="topbar-right" class="space-evenly topbar-right">
+            <div class="network">
+                <div><img src="/static/images/network.png" height="35"></div>
+                <div class="small-font">Network</div>
+            </div>
+            <div class="profile-top-bar">
+                <a href="/patient_profile"><img src="/static/images/profile.png" height="35"></a>
+                <br>
+                <div class="small-font">Profile</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="inner-content">
+            <div class="doctor_matches">
+                <div class="vertical-center-new">Explore</div>
+            </div>
+            <div id="lower-content" class="space-evenly">
+                <div class="feed">
+                    <div class="box write-post">
+                        <div class="space-evenly inner-post">
+                            <img src="/static/images/grey_profile.png" height="50">
+                            <input type="text" placeholder="    write a post" class="grey-box write-post-box">
+                        </div>
+                    </div>
+                    <hr class="hline">
+                    {% for post in posts %}
+                    <div class="box">
+                        <div class="author inner-post-content">
+                            <img src="/static/images/grey_profile.png" height="50">
+                            <a href="{{post.poster}}"><div class=""> &nbsp; {{post.name}} &nbsp; &bull; </div></a>
+                            {% for att in post.attributes %}
+                                <div class="post-attributes"> &nbsp; {{att}} &bull; </div>
+                            {% endfor %}
+                            <div class="post-connection"> &nbsp; {{post.connection}}</div>
+                        </div>
+                        <hr class="hline">
+                        <div class="inner-post-content">
+                            <div>{{post.text}}</div>
+                            {% if "link" in post %}
+                                <div id="link" class="box link space-evenly">
+                                    <div class="link-left space-evenly">
+                                        <div class="vertical-center-new">
+                                            <img src="/static/images/doctor-profile.png" height="50">
+                                        </div>
+                                        <div class="vertical-center-new">
+                                            <a class="a:link" href=/visitors_profile>
+                                                <div class="link-doctor">{{post.link}}</div>
+                                                <div class="link-info">
+                                                    <img src="/static/images/heart.png" width="20">
+                                                    <div> &nbsp; {{doctors[post.link].mutual_friends}} mutual friends</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="link-right">
+                                        <div class="shift-down">
+                                            {% for att in doctors[post.link].attributes %}
+                                            <div class="link-attribute">
+                                                <img src="/static/images/{{att}}.png" height="22"> &nbsp;
+                                                <div class="vertical-center-new">{{att}}</div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <hr class="hline">
+                        <div class="space-evenly">
+                            <div></div>
+                            <div class="post-bottom vote-center">
+                                <img src="/static/images/upvote.png" height="18">
+                                <div> &nbsp; {{post.votes}} &nbsp; </div>
+                                <img src="/static/images/downvote.png" height="18">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    {% endfor %}
+                </div>
+                <div>
+                    <div class="box top-contributors">
+                        <div class="top-title ">Top Contributors</div>
+                        <hr class="hline">
+                        {% for person in top_contributors %}
+                            <div class="cont-row">
+                                <div class="doctor-rank">{{loop.index}}.</div>
+                                <div id="contributor" class="box contributor space-evenly">
+                                    <div class="doctor-row">
+                                        &nbsp; &nbsp;
+                                        <img src="/static/images/profile.png" height="30" class="vertical-center-new">
+                                        &nbsp; &nbsp; &nbsp;
+                                        <div class="vertical-center-new">{{person}}</div>
+                                    </div>
+                                    <div id="link-right" class="vertical-center-new">
+                                        <img src="/static/images/flame.png" height="30" class="vertical-center-new">
+                                        &nbsp; &nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <hr class="hline">
+                        <div class="see-all">
+                            See All &or;
+                        </div>
+                    </div>
+                    <div class="box top-doctors">
+                        <div class="top-title ">Top Rated Doctors</div>
+                        <hr class="hline">
+                        {% for doctor in doctor_names %}
+                            <div class="doctor-row">
+                                <div class="doctor-rank">{{top_doctors[doctor].place}}.</div>
+                                <div id="link" class="box link space-evenly">
+                                    <div class="link-left space-evenly">
+                                        <div class="vertical-center-new">
+                                            <img src="/static/images/doctor-profile.png" height="50">
+                                        </div>
+                                        <div class="vertical-center-new">
+                                            <div class="link-doctor">{{doctor}}</div>
+                                            <div class="link-info">
+                                                <img src="/static/images/heart.png" width="20">
+                                                <div> &nbsp; {{top_doctors[doctor].mutual_friends}} mutual friends</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="link-right">
+                                        <div class="shift-down">
+                                            {% for att in top_doctors[doctor].attributes %}
+                                            <div class="link-attribute">
+                                                <img src="/static/images/{{att}}.png" height="16"> &nbsp;
+                                                <div class="vertical-center-new">{{att}}</div>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <hr class="hline">
+                        <div class="see-all">
+                            See All &or;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

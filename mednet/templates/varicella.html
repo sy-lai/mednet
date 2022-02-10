@@ -1,0 +1,178 @@
+<html>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static',filename='styles/profiles_2.css') }}"
+  />
+  <body>
+    <div class="topbar space-evenly">
+      <div id="topbar-left">
+        <a href="/dashboard"><img src="/static/images/logo.png" height="60"/></a>
+        <input
+          type="text"
+          placeholder="Search.."
+          class="search-bar grey-box vertical-center"
+        />
+      </div>
+      <div id="topbar-right" class="space-evenly topbar-right">
+        <div class="network">
+          <a href="/explore"><img src="/static/images/network.png" height="35" /></a>
+          <div class="small-font">Network</div>
+        </div>
+        <div class="profile-top-bar">
+          <a href="/patient_profile">
+            <img src="/static/images/profile.png" height="35" />
+          </a>
+          <br />
+          <div class="small-font">Profile</div>
+        </div>
+      </div>
+    </div>
+    <!-- profile section start -->
+    <div class="profile-section">
+      <div class="profile-bg">
+        <img src="/static/images/Rectangleprofilebg.png" />
+      </div>
+      <div class="profile-details">
+        <div class="profile-info">
+          <div class="profile-image">
+            <img src="/static/images/profile.png" />
+          </div>
+          <h3>Varicella Shah</h3>
+          <span>New York, NY</span>
+        </div>
+        <div class="connections d-flex flex-grow-1 justify-content-between">
+          <div class="direct-connections">
+            <a class="d-flex" href="#">
+              <img src="/static/images/heart.png" />
+              <div>friends<span>462</span></div>
+            </a>
+            <a href="#" class="d-flex">
+              <img src="/static/images/plus.png" />
+              <div>doctors<span>6</span></div>
+            </a>
+            <p>2 reviews written</p>
+          </div>
+          <div class="mutual-connections">
+            <a class="d-flex" href="#">
+              <img src="/static/images/grey_profile.png" />
+              <div>2 mutual friends</div>
+            </a>
+            <a class="d-flex" href="#">
+              <img
+                class="contain-img"
+                src="/static/images/fas.fa-user-md.png"
+              />
+              <div>3 mutual doctors</div>
+            </a>
+          </div>
+
+          <div class="groups">
+            <div>
+              <div class="text-center groups-text text-bold text-black">
+                groups
+              </div>
+              <div class="group-list">
+                <div>WOC</div>
+                <div>
+                  <img class="grey-dot" src="/static/images/grey dot.png" />
+                  <span>South Asian</span>
+                </div>
+                <div>
+                  <img class="grey-dot" src="/static/images/grey dot.png" />
+                  <span>anxiety</span>
+                </div>
+                <div>
+                  <img class="grey-dot" src="/static/images/grey dot.png" />
+                  <span>New York</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-connect">
+          <a id="pfconnect" href="#">Connect</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile section end -->
+
+    <!-- review section -->
+    <section class="review-section">
+      <h2>What's new</h2>
+      <div class="reviews">
+        <div class="review-container">
+          <div class="header">
+            <div class="profile-image"></div>
+            <h2>Varicella Shah</h2>
+            <img src="/static/images/grey dot.png" />
+            <div class="group-name text-primary">anxiety</div>
+            <img src="/static/images/grey dot.png" />
+            <div class="group-name text-primary">South Asian</div>
+          </div>
+          <hr />
+          <div class="body">
+            <div class="review">
+              I want to spread the word about
+              <a class="betterhelp-text" href="https://www.betterhelp.com/"
+                >Betterhelp</a
+              >. I have been struggling with my anxiety as of late, and I wanted
+              to find a therapist that is South Asian, like myself. I had such
+              great luck with this platform in finding someone who understands
+              my cultural context. High recommend to anyone seeking out
+              affordable counselling!
+            </div>
+          </div>
+          <hr />
+          <div class="footer">
+            <div class="upvote-icon"></div>
+            <div class="upvoted">15</div>
+            <div class="downvote-icon"></div>
+          </div>
+        </div>
+        <div class="review-container">
+          <div class="header">
+            <div class="profile-image"></div>
+            <h2>Varicella Shah</h2>
+            <img src="/static/images/grey dot.png" />
+            <div class="group-name text-primary">anxiety</div>
+            <img src="/static/images/grey dot.png" />
+            <div class="group-name text-primary">South Asian</div>
+          </div>
+          <hr />
+          <div class="body">
+            <div class="review">
+              I feel a lot better now from the recovery. Love how caring Mount
+              Sinai's emergency department is.
+            </div>
+
+            <img
+              class="d-block m-auto my-2"
+              src="/static/images/image 2.png"
+              alt="new born baby"
+            />
+          </div>
+          <hr />
+          <div class="footer">
+            <div class="upvote-icon"></div>
+            <div class="upvoted">23</div>
+            <div class="downvote-icon"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#pfconnect").click(function () {
+          $(this).text("Connected");
+          $(this).addClass("btn-bg");
+        });
+      });
+    </script>
+  </body>
+</html>

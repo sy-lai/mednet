@@ -1,0 +1,127 @@
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/landing.css') }}">
+
+<body>
+    <div class="topbar space-evenly">
+        <div id="topbar-left">
+            <img src="/static/images/logo.png" height="60">
+            <input type="text" placeholder="Search.." class="search-bar grey-box vertical-center">
+        </div>
+        <div id="topbar-right" class="space-evenly topbar-right">
+            <div class="network">
+                <div><img src="/static/images/network.png" height="35"></div>
+                <div class="small-font">Network</div>
+            </div>
+            <div class="profile-top-bar">
+                <img src="/static/images/profile.png" height="35">
+                <br>
+                <div class="small-font">Profile</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="inner-content space-evenly">
+            <div class="box profile">
+                <div class="inner-profile">
+                    <img src="/static/images/profile.png" width="100">
+                    <div class="title-font"> Rubella Jones</div>
+                    <img src="/static/images/25complete.png">
+                    <hr class="hline">
+                    <div>
+                        <b>connections</b>
+                        <div class="space-evenly connection" id="friends">
+                            <div class="friends-left">
+                                <img src="/static/images/heart.png" height="15">
+                                friends
+                            </div>
+                            <div class="friends-right">
+                                251
+                            </div>
+                        </div>
+                        <div class="space-evenly connection" id="doctors">
+                            <div class="doctors-left">
+                                <img src="/static/images/plus.png" height="15">
+                                doctors
+                            </div>
+                            <div class="friends-right">
+                                17
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hline">
+                    <b>groups</b>
+                    <p class="group">
+                        WOC &bull; South Asian &bull; Anxiety &bull; Student &bull; New York
+                    </p>
+                </div>
+            </div>
+            <div class="feed">
+                <div class="box write-post">
+                    <div class="space-evenly inner-post">
+                        <img src="/static/images/grey_profile.png" height="50">
+                        <input type="text" placeholder="write a post" class="grey-box write-post-box">
+                    </div>
+                </div>
+                <hr class="hline">
+                {% for post in posts %}
+                <div class="box">
+                    <div class="author inner-post-content">
+                        <img src="/static/images/grey_profile.png" height="50">
+                        <div><a href="/profiles/{{post.profile_link}}" target="_blank">&nbsp; {{post.name}} &nbsp; &bull; </a> </div>
+                        {% for att in post.attributes %}
+                            <div class="post-attributes"> &nbsp; {{att}} &bull; </div>
+                        {% endfor %}
+                        <div class="post-connection"> &nbsp; {{post.connection}}</div>
+                    </div>
+                    <hr class="hline">
+                    <div class="inner-post-content">
+                        <div>{{post.text}}</div>
+                        {% if "link" in post %}
+                            <div id="link" class="box link space-evenly">
+                                <div class="link-left space-evenly">
+                                    <div class="vertical-center-new">
+                                        <img src="/static/images/doctor-profile.png" height="50">
+                                    </div>
+                                    <div class="vertical-center-new">
+                                        <div class="link-doctor"><a href="/visitors_profile" target="_blank">{{post.link}}</a></div>
+                                        <div class="link-info">
+                                            <img src="/static/images/heart.png" width="20">
+                                            <div> &nbsp; {{doctors[post.link].mutual_friends}} mutual friends</div>
+                                        </div>
+                                        <div class="link-info">
+                                            <img src="/static/images/plus.png" width="20">
+                                            <div> &nbsp; {{doctors[post.link].mutual_doctors}} mutual doctors</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="link-right">
+                                    <div class="shift-down">
+                                        {% for att in doctors[post.link].attributes %}
+                                        <div class="link-attribute">
+                                            <img src="/static/images/{{att}}.png" height="22"> &nbsp;
+                                            <div class="vertical-center-new">{{att}}</div>
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <hr class="hline">
+                    <div class="post-bottom">
+                        <img src="/static/images/like.png">
+                        <img src="/static/images/comment.png">
+                        <img src="/static/images/reshare.png">
+                    </div>
+                </div>
+                <br>
+                {% endfor %}
+            </div>
+            <div class="schedule">
+                <img src="/static/images/calendar.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

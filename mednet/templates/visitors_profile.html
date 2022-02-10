@@ -1,0 +1,218 @@
+<html>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static',filename='styles/visitors_profile.css') }}"
+  />
+  <!-- <link rel="stylesheet" href="/static/styles/visitors_profile.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/visitors_profile.css') }}"> -->
+  <body>
+    <div class="topbar space-evenly">
+      <div id="topbar-left">
+        <a href="/dashboard"><img src="/static/images/logo.png" height="60"/></a>
+        <input
+          type="text"
+          placeholder="Search.."
+          class="search-bar grey-box vertical-center"
+        />
+      </div>
+      <div id="topbar-right" class="space-evenly topbar-right">
+        <div class="network">
+          <a href="/explore"><div><img src="/static/images/network.png" height="35" /></div></a>
+          <div class="small-font">Network</div>
+        </div>
+        <div class="profile-top-bar">
+          <img src="/static/images/profile.png" height="35" />
+          <br />
+          <div class="small-font">Profile</div>
+        </div>
+      </div>
+    </div>
+    <!-- visitor profile section -->
+    <section class="visitor-profile-section">
+      <div class="profile-info">
+        <div class="profile-image">
+          <img src="/static/images/doctor_icon.png" />
+        </div>
+        <h3>Martha Kim, M.D.</h3>
+        <span>New York, NY</span>
+      </div>
+      <div class="connections">
+        <div class="mutual">
+          <a href="#"
+            ><img src="/static/images/heart.png" />friends<span>352</span></a
+          >
+        </div>
+        <div class="endorsements">
+          <a href="#"><img src="/static/images/check.png" />endorsements</a>
+          <a href="#">
+            <img src="/static/images/grey_user_icon.png" />
+            <span>35 mutual friends</span>
+          </a>
+        </div>
+      </div>
+      <div class="schedule">
+        <ul>
+          <li>New York Dermatology Group</li>
+          <li>119 Fifth Avenue 4th floor</li>
+          <li>New York, NY 10003</li>
+          <li><a class="number" href="tel:6467987483">(646) 798-7483</a></li>
+        </ul>
+        <button onclick="myFunction()">Schedule</button>
+        <button class="btn-bg" href="#">Endorse</button>
+      </div>
+      <div class="sponsors">
+        <ul>
+          <li>
+            <img src="/static/images/Dermatology.png" />
+            <h6>Dermatology</h6>
+          </li>
+          <li>
+            <!-- <img src="/static/images/WOC.png" /> -->
+            <!-- <div class="female-gender-icon" /> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="35"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              style="padding-right: 40px"
+            >
+              <path
+                style="stroke-width: 5"
+                fill-rule="evenodd"
+                d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"
+              />
+            </svg>
+            <h6>WOC</h6>
+          </li>
+          <li>
+            <img src="/static/images/holistic.png" />
+            <h6>holistic</h6>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- visitor profile section ends -->
+
+    <!-- review section -->
+    <section class="review-section">
+      <div class="calendar" id="calendar_one" style="display: none">
+        <img src="/static/images/schedule.png" />
+      </div>
+      <h2>
+        Reviews
+        <a class="menu" href="#"
+          ><img src="/static/images/Rectangle 43.png"
+        /></a>
+      </h2>
+      <form class="dropdowns">
+        <select>
+          <option value="Doctors">Doctors</option>
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </select>
+        <select>
+          <option value="Friends">Friends</option>
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </select>
+        <select>
+          <option value="Location">Location</option>
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </select>
+        <select>
+          <option value="Ratings">Ratings</option>
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </select>
+        <select>
+          <option value="Age">Age</option>
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </select>
+        <select>
+          <option value="Patient Group">Patient Group</option>
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+        </select>
+      </form>
+      <div class="review-box">
+        <div class="reviewer-info">
+          <div class="review-image">
+            <img src="/static/images/profile.png" />
+          </div>
+          <div class="review-details">
+            <h3>
+              <a href="/profiles/influenza-smith" target="_blank"
+                >Influenza Smith</a
+              >
+            </h3>
+            <span>Los Altos, CA</span>
+            <ul>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reviewer-text">
+          <p>
+            I had a really great experience with Dr. kim, who is a woman of
+            color like myself. She took really great care of my skin and
+            adressed problems specific to my skin type. On top of that, she
+            knows and understands problems that people of my ethnic background
+            face. I definitely feel comfortable entrusting her with my health!
+          </p>
+        </div>
+      </div>
+      <div class="review-box">
+        <div class="reviewer-info">
+          <div class="review-image">
+            <img src="/static/images/doctor_icon.png" />
+          </div>
+          <div class="review-details">
+            <h3>Greg House, M.D.</h3>
+            <span>Princeton, NJ</span>
+            <ul>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+              <li><img src="/static/images/Vectorstar.png" height="20"/></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reviewer-text">
+          <p>
+            Dr. Kim is an amazing colleague of mine, and I have immense respect
+            for her. I would always feel comfortable entrusting her with my
+            patients. If you are in the area and in need of a responsible,
+            reliable, and caring doctor, see Dr. Kim!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+    <script>
+      function myFunction(event) {
+        var x = document.getElementById("calendar_one");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>

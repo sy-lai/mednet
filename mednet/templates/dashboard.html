@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/dashboard.css') }}"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="topbar space-evenly">
+      <div id="topbar-left">
+        <a href="/dashboard"><img src="/static/images/logo.png" height="60" class="vertical-center-new"></a>
+        <input
+          type="text"
+          placeholder="Search.."
+          class="search-bar grey-box vertical-center"
+        />
+      </div>
+      <div id="topbar-right" class="space-evenly topbar-right">
+        <div class="network">
+          <a href="/explore"><img src="/static/images/network.png" height="35" /></a>
+          <div class="small-font">Network</div>
+        </div>
+        <div class="profile-top-bar">
+          <a href="/patient_profile"><img src="/static/images//profile.png" height="35" /></a>
+          <br />
+          <div class="small-font">Profile</div>
+        </div>
+      </div>
+    </div>
+    <div class="content d-flex">
+      <div class="">
+        <div class="profile-info">
+          <img src="/static/images//profile.png" height="100" alt="" />
+          <h1 class="user-name">Rubella's Dashboard</h1>
+          <img src="/static/images//25complete.png" height="30" alt="" />
+          <div class="find-groups-button vertical-center-new">
+            <a href="/patient_profile"><p class="in-profile-button-text">Complete<br>Profile Now</p></a>
+          </div>
+        </div>
+
+        <a href="/explore">
+          <img class="w-100" src="/static/images//Group 121.png" alt="" />
+        </a>
+        
+        <div id="my-doctors">
+          <img class="w-100" src="/static/images//My doctors.png" alt="" />
+        </div>
+        <div id="my-friends">
+          <img class="w-100" src="/static/images//My Friends.png" alt="" />
+        </div>
+      </div>
+      <div class="">
+        <div class="box group-content">
+          <div class="my-group-header space-evenly">
+            <div class="group-box-title">My Groups (5)</div>
+            
+              <div class="find-groups-button vertical-center-new">
+                <a href="/search_groups"><div class="in-button-text">Find Groups</div></a>
+              </div>
+          </div>
+          <input type="text" placeholder="Search.." class="group-search grey-box vertical-center">
+          <div id="my-group-list">
+              {% for group in my_groups %}
+                  <a href=/community_page>
+                    <div id="group" class="box link space-evenly">
+                        <div class="link-left">
+                            <img src="/static/images/{{group.image}}" height="132" width="136">
+                        </div>
+                        <div class="link-right space-evenly">
+                            <div class="vertical-center-new">
+                                <div class="link-doctor">{{group.name}}</div>
+                                <div class="link-info">
+                                    <img src="/static/images//network.png" height="17">
+                                    <div> &nbsp; {{group.members}} members</div>
+                                </div>
+                                <div class="link-info">
+                                    <img src="/static/images//heart.png" width="20">
+                                    <div> &nbsp; {{group.friends}} friends are members</div>
+                                </div>
+                            </div>
+                            <div class="leave-group-box">
+                                <img src="/static/images//leave-group.png" width="63">
+                                Leave Group
+                            </div>
+                        </div>
+                    </div>
+                  </a>                
+              {% endfor %}
+          </div>
+      </div>
+        <div class="schedule">
+          <img class="w-100" src="/static/images/schedule.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

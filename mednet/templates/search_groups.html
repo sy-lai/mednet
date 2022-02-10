@@ -1,0 +1,69 @@
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/search_groups.css') }}">
+
+<body>
+    <div class="topbar space-evenly">
+        <div id="topbar-left">
+            <a href="/dashboard"><img src="/static/images/logo.png" height="60"></a>
+            <input type="text" placeholder="    Search.." class="search-bar grey-box vertical-center">
+        </div>
+        <div id="topbar-right" class="space-evenly topbar-right">
+            <div class="network">
+                <a href="/explore"><img src="/static/images/network.png" height="35"></a>
+                <div class="small-font">Network</div>
+            </div>
+            <div class="profile-top-bar">
+                <a href="/patient_profile"><img src="/static/images/profile.png" height="35"></a>
+                <br>
+                <div class="small-font">Profile</div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hline">
+
+    <div class="content">
+        <div class="top-image"><img src="/static/images/community.png"></div>
+        <div class="doctor_matches">
+            <div class="vertical-center-new">Discover Groups</div>
+        </div>
+        <div class="inner-content">
+            <div class="box right-content">
+                <input type="text" placeholder="    Search.." class="group-search grey-box">
+                <div class="drop-down-list">
+                    <img src="/static/images//list.png" height="50">
+                    <div class="drop-down-text vertical-center-new">Location &or; Ethnicity &or; Condition &or; Sex/Gender &or; Pregnancy &or; </div>
+                </div>
+                <div id="discover-group-list">
+                    {% for group in discover_groups %}
+                        <div id="group" class="box link space-evenly">
+                            <div class="link-left">
+                                <img src="/static/images/{{group.image}}" height="132" width="136">
+                            </div>
+                            <div class="link-right space-evenly">
+                                <div class="vertical-center-new">
+                                    <div class="link-doctor">{{group.name}}</div>
+                                    <div class="link-info">
+                                        <img src="/static/images/network.png" width="25">
+                                        <div> &nbsp; {{group.members}} members</div>
+                                    </div>
+                                    <div class="link-info">
+                                        <img src="/static/images/heart.png" width="25">
+                                        <div> &nbsp; {{group.friends}} friends are members</div>
+                                    </div>
+                                </div>
+                                <div class="join-group-box">
+                                    <img src="/static/images/join-group.png" height="61" width="61"><br>
+                                    join group
+                                </div>
+                            </div>
+                        </div>                
+                    {% endfor %}
+                    <img src="/static/images/pagination.png" height="40">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

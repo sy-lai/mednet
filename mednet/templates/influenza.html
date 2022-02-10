@@ -1,0 +1,218 @@
+<html>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static',filename='styles/profiles_1.css') }}"
+  />
+  <!-- <link rel="stylesheet" href="/static/styles/profiles-1.css"/> -->
+
+  <body>
+    <div class="topbar space-evenly">
+      <div id="topbar-left">
+        <a href="/dashboard"><img src="/static/images/logo.png" height="60"/></a>
+        <input
+          type="text"
+          placeholder="Search.."
+          class="search-bar grey-box vertical-center"
+        />
+      </div>
+      <div id="topbar-right" class="space-evenly topbar-right">
+        <div class="network">
+          <a href="/explore"><img src="/static/images/network.png" height="35" /></a>
+          <div class="small-font">Network</div>
+        </div>
+        <div class="profile-top-bar">
+          <a href="/patient_profile">
+            <img src="/static/images/profile.png" height="35" />
+          </a>
+          <br />
+          <div class="small-font">Profile</div>
+        </div>
+      </div>
+    </div>
+    <!-- profile section start -->
+    <div class="profile-section">
+      <div class="profile-bg">
+        <img src="/static/images/Rectangleprofilebg.png" />
+      </div>
+      <div class="profile-details">
+        <div class="profile-info">
+          <div class="profile-image">
+            <img src="/static/images/profile.png" />
+          </div>
+          <h3>Influenza Smith</h3>
+          <span>Los Altos, CA</span>
+        </div>
+
+        <div class="connections d-flex flex-grow-1 justify-content-between">
+          <div class="direct-connections">
+            <a class="d-flex" href="#">
+              <img src="/static/images/heart.png" />
+              <div>friends<span>251</span></div>
+            </a>
+            <a href="#" class="d-flex">
+              <img src="/static/images/plus.png" />
+              <div>doctors<span>9</span></div>
+            </a>
+            <p>2 reviews written</p>
+          </div>
+          <div class="mutual-connections">
+            <a class="d-flex" href="#">
+              <img src="/static/images/grey_profile.png" />
+              <div>3 mutual friends</div>
+            </a>
+            <a class="d-flex" href="#">
+              <img
+                class="contain-img"
+                src="/static/images/fas.fa-user-md.png"
+              />
+              <div>2 mutual doctors</div>
+            </a>
+          </div>
+
+          <div class="groups">
+            <div>
+              <div class="text-center groups-text text-bold text-black">
+                groups
+              </div>
+              <div class="group-list">
+                <div>WOC</div>
+                <div>
+                  <img class="grey-dot" src="/static/images/grey dot.png" />
+                  <span>South Asian</span>
+                </div>
+                <div>
+                  <img class="grey-dot" src="/static/images/grey dot.png" />
+                  <span>anxiety</span>
+                </div>
+                <div>
+                  <img class="grey-dot" src="/static/images/grey dot.png" />
+                  <span>single-mom</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-connect">
+          <a id="pfconnect" href="#">Connect</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile section end -->
+
+    <!-- review section -->
+    <section class="review-section">
+      <h2>What's new</h2>
+      <!-- <div class="review-box">
+        <div class="reviewer-info">
+            <div class="review-image">
+                <img src="/static/images/doctor-profile.png"/>
+            </div>
+            <div class="review-details">
+                <h3><a href="/visitors_profile" target="_blank"> Martha Kim, M.D.</a></h3>
+                <span>New york, NY</span>
+                <ul>
+                    <li><img src="/static/images/Vectorstar.png"/></li>
+                    <li><img src="/static/images/Vectorstar.png"/></li>
+                    <li><img src="/static/images/Vectorstar.png"/></li>
+                    <li><img src="/static/images/Vectorstar.png"/></li>
+                    <li><img src="/static/images/Vectorstar.png"/></li>
+                </ul>
+            </div>
+        </div>
+        <div class="reviewer-text">
+            <p>I had a really great experience with Dr. kim, who is a woman of color like myself. She took really great care of my skin and adressed problems specific to my skin type. On top of that, she knows and understands problems that people of my ethnic background face. I definitely feel comfortable entrusting her with my health!</p>
+        </div>
+
+
+    </div> -->
+      <div class="reviews">
+        <div class="review-container">
+          <div class="header">
+            <div class="profile-image"></div>
+            <h2>Influenza Smith</h2>
+            <img src="/static/images/grey dot.png" />
+            <div class="group-name text-primary">woc</div>
+          </div>
+          <hr />
+          <div class="body">
+            <div class="review">
+              I had a really great experience with Dr. Kim, who is a woman of
+              color like myself. She took really great care of my skin and
+              adressed problems specific to my skin type. On top of that, she
+              knows and understands problems that people of my ethnic background
+              face, I definitely feel comfortable etrusting her with my health!
+            </div>
+
+            <div class="attached-profile">
+              <div>
+                <div class="doctor-profile"></div>
+                <h2><a href="/visitors_profile">Martha Kim, M.D.</a></h2>
+                <div class="d-flex">
+                  <div class="icon heart-icon"></div>
+                  <span> 35 mutual friends </span>
+                </div>
+                <div class="d-flex align-self-start">
+                </div>
+              </div>
+              <div>
+                <div class="stethoscope-icon"></div>
+                <p>Dermatology</p>
+                <div class="female-gender-icon"></div>
+                <p>WOC</p>
+                <div class="holistic-icon"></div>
+                <p>holistic</p>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer">
+            <div class="upvote-icon"></div>
+            <div class="upvoted">17</div>
+            <div class="downvote-icon"></div>
+          </div>
+        </div>
+        <div class="review-container">
+          <div class="header">
+            <div class="profile-image"></div>
+            <h2>Influenza Smith</h2>
+            <img height="5" src="/static/images/grey_dot.png" />
+            <div class="group-name text-primary">woc</div>
+          </div>
+          <hr />
+          <div class="body">
+            <div class="review">
+              Say hello to the world! I want to shout out for Lenox hill
+              hospital. Such a pleasant journey here for my delivery.
+            </div>
+
+            <img
+              class="d-block m-auto my-2"
+              src="/static/images/image 1.png"
+              alt="new born baby"
+            />
+          </div>
+          <hr />
+          <div class="footer">
+            <div class="upvote-icon"></div>
+            <div class="upvoted">57</div>
+            <div class="downvote-icon"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- review section end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#pfconnect").click(function () {
+          $(this).text("Connected");
+          $(this).addClass("btn-bg");
+        });
+      });
+    </script>
+  </body>
+</html>

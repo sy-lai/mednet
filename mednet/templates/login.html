@@ -1,0 +1,31 @@
+<html>
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+
+<body>
+    <div class="background" id="background">
+    
+        <div class="space-evenly header">
+            <h1 class="page-title login-title">mednet</h1>
+            <img src="/static/images/logo.png" height="56">
+        </div>
+        
+
+        <form method="POST" action="/loginaction" class='form login-form'>
+            <input type="text" name="username" value="username" class="input-box"><br>
+            <input type="text" name="password" value="password" class="input-box"><br>
+            <input type="submit" value="Log In" class="login-button">
+
+            
+        </form>
+
+        <hr class="hline2">
+        <div class="no-account">
+            <div class="donthaveaccount">Dont have an Account?</div>
+            <div class="signup-button center">
+                <a href="/createaccount" class="link vertical-center-new">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
