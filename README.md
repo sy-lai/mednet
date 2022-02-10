@@ -1,7 +1,7 @@
 # Mednet
 ## Group project for an web application using HTML, CSS, Python Flask
 - Collaborated with Casey Olsen and Saahiti Jasti
-To start the app run:
+### To start the app run:
 
 ```
 export FLASK_APP=server.py
