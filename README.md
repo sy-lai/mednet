@@ -1,6 +1,7 @@
 # Mednet
 ## Group project for an web application using HTML, CSS, Python Flask
 - Collaborated with Casey Olsen and Saahiti Jasti
+- Attached the Hi-Fi Prototype files(fig & pdf) in the folder
 ### To start the app run:
 
 ```
